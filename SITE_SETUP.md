@@ -20,3 +20,7 @@ No guessed production host has been embedded. Structured data uses Organization 
 ## Publishing standards
 
 Every new page must solve a new reader task, include realistic limitations and actionable examples, be linked from navigation, and avoid repeating previous content for keywords alone. Prefer fewer pages to ten thin or templated pieces. Update existing material when that is more useful.
+
+
+## October 23, 2026 — owner-supplied host
+Host designated: https://masteraffiliate.wasmer.app/. GitHub now has canonical tags on 18 indexable HTML pages, plus `sitemap.xml` and a sitemap directive in `robots.txt`. The link archive stays noindex. Previous sections about a missing hostname are superseded by `SEO_SETUP.md`. **Live Wasmer deployment remains unverified; do not assume the repository is connected to the site's hosting.**
