@@ -9,12 +9,19 @@ Start date: October 23, 2026. Editorial target: five original pages per day. Thi
 - Test an Email Opt-In Form Before Sending Traffic
 - SEO Launch Checklist for a GitHub Site Hosted on Wasmer
 
-## Oct 24, 2026 — five proposed tasks
-- How to identify the reader behind a search query
-- Interview prompts for understanding affiliate audiences
-- How to build a problem-first content brief
-- Turning repeated support questions into tutorials
-- Choosing a narrow beginner topic without false promises
+## Oct 24, 2026 — ten new guides committed
+- Map Search Intent Before Writing an Affiliate Guide
+- Interview Potential Readers Without a Sales Pitch
+- Write a Problem-First Content Brief
+- Turn Reader Questions into Tutorials
+- Choose a Narrow Beginner Topic
+- Plan a Useful YouTube Tutorial Without Filming People
+- Write Community Answers That Help Even When Nobody Clicks Your Link
+- Plan a Pinterest Pin That Honestly Matches Its Destination Article
+- Audit a Small Affiliate Landing Page for Accessibility and Trust
+- Build a Campaign Metrics Dictionary Before Comparing Traffic Reports
+
+The new guides were committed to GitHub; deployment to Wasmer was not verified. The saved referral-link archive remains noindex and the new guides contain no paid links.
 
 ## Oct 25, 2026 — five proposed tasks
 - YouTube tutorial outlines for affiliate education
