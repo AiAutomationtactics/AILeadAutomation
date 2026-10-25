@@ -30,12 +30,14 @@ The new guides were committed to GitHub; deployment to Wasmer was not verified. 
 
 These three guides are distinct from the five video-focused topics below, reserved for the separate daily guide workflow. No unverified referral or checkout URLs were inserted. The production domain did not resolve during this run. These three GitHub-published source pages are intentionally omitted from sitemap.xml until the live canonical URLs can be verified; the existing sitemap's public accessibility is also unverified.
 
-## Oct 25, 2026 — five proposed tasks
-- YouTube tutorial outlines for affiliate education
-- A video description that accurately matches its content
-- A short-form video storyboard with one teaching point
-- How to evaluate YouTube audience retention
-- When to send a video viewer to a worksheet
+## October 25, 2026 — four video education guides committed; one topic merged
+- YouTube tutorial outlines for affiliate education — merged into the existing `faceless-youtube-tutorial-workflow.html` guide (October 24); no duplicate created.
+- A video description that accurately matches its content — `youtube-description-accuracy.html`.
+- A short-form video storyboard with one teaching point — `one-point-short-video-storyboard.html`.
+- How to evaluate YouTube audience retention — `youtube-retention-diagnostic.html`.
+- When to send a video viewer to a worksheet — `video-to-worksheet-decision.html`.
+
+All four new files are original instructional source articles on GitHub, with examples, accessibility, canonical metadata and internal navigation. The owner-designated production domain was still not resolvable from this environment on October 25; these new URLs are **not** added to sitemap.xml until publicly deployed and verified. Source commits do not prove live publication or indexing.
 
 ## Oct 26, 2026 — five proposed tasks
 - Quora answers that stand alone without referral links
