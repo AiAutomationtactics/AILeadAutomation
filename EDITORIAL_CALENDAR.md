@@ -23,6 +23,13 @@ Start date: October 23, 2026. Editorial target: five original pages per day. Thi
 
 The new guides were committed to GitHub; deployment to Wasmer was not verified. The saved referral-link archive remains noindex and the new guides contain no paid links.
 
+## October 25, 2026 — three additional technical guides committed
+- Search Console Clicks vs GA4 Sessions: A Reconciliation Worksheet
+- SPF, DKIM and DMARC for a Permission-Based Newsletter
+- Mobile Page-Speed Triage for Educational Landing Pages
+
+These three guides are distinct from the five video-focused topics below, reserved for the separate daily guide workflow. No unverified referral or checkout URLs were inserted. The production domain did not resolve during this run. These three GitHub-published source pages are intentionally omitted from sitemap.xml until the live canonical URLs can be verified; the existing sitemap's public accessibility is also unverified.
+
 ## Oct 25, 2026 — five proposed tasks
 - YouTube tutorial outlines for affiliate education
 - A video description that accurately matches its content
