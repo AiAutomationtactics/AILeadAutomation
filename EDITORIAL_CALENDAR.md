@@ -46,6 +46,15 @@ All four new files are original instructional source articles on GitHub, with ex
 - A weekly community engagement log
 - Community rules checklist for affiliate marketers
 
+### Oct 26, 2026 — three distinct guides committed; two topics merged
+- Quora answers that stand alone without referral links → `quora-answer-without-affiliate-links.html`. Quora-specific official-policy checks, its stated affiliate-link restriction, a full sample answer, and a posting decision worksheet.
+- How to cite sources in community answers → `cite-sources-in-community-answers.html`. A claim-to-source ledger, source hierarchy, worked sitemap claim audit and correction protocol.
+- A weekly community engagement log → `weekly-community-learning-log.html`. A privacy-conscious qualitative research worksheet, a clearly fictional example and a review process.
+- Respectful participation in specialist forums → **merged** into existing `community-answer-protocol.html` and `free-traffic-etiquette.html`; no redundant page.
+- Community rules checklist for affiliate marketers → **merged** into the Quora-specific policy workflow and existing general community guidance; no redundant page.
+
+These are committed GitHub source files, not verified live Wasmer pages. The designated hostname did not resolve on October 26 from the checking environment. No paid referrals, checkout buttons, or unverified Search Console token were added. New URLs are intentionally omitted from the existing sitemap pending live deployment verification; existing sitemap entries also remain unverified. No Search Console sitemap submission or indexing confirmation was possible.
+
 ## Oct 27, 2026 — five proposed tasks
 - Pinterest idea-to-article mapping worksheet
 - Accessible infographic copy for marketers
