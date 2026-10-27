@@ -62,6 +62,15 @@ These are committed GitHub source files, not verified live Wasmer pages. The des
 - An honest social profile description checklist
 - Repurpose one tutorial without copy-pasting
 
+### Oct 27, 2026 — three original guides committed; two proposals deferred
+- Accessible infographic copy for marketers → `accessible-infographic-copy.html`, with a full text-equivalent workflow, alt-text examples and a quality worksheet.
+- Instagram educational carousel planning → `instagram-educational-carousel-plan.html`, with a six-slide instructional example and an accessibility/measurement review.
+- Repurpose one tutorial without copy-pasting → `repurpose-tutorial-without-duplication.html`, with a cross-format transformation and source-of-truth worksheet.
+- Pinterest idea-to-article mapping → already covered in `pinterest-pin-to-article-workflow.html`; no duplicate.
+- Honest social profile description checklist → deferred; no distinct high-value draft reviewed today.
+
+These are GitHub source commits only. Live Wasmer DNS/HTTPS/page access was not confirmed on October 27. No unverified new URLs were added to sitemap.xml, and the existing sitemap entries remain unverified. The resources.html noindex directive is unchanged. No affiliate, Stripe, SendSteed, or Search Console tag was inserted; Search Console ownership and indexing were not verified.
+
 ## Oct 28, 2026 — five proposed tasks
 - Facebook group participation without link dumping
 - How to answer repetitive beginner questions
