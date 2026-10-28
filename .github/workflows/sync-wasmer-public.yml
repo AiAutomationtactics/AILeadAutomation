@@ -1,0 +1,53 @@
+name: Keep Wasmer static public folder synced
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.html"
+      - "*.htm"
+      - "*.css"
+      - "*.js"
+      - "*.mjs"
+      - "*.svg"
+      - "*.png"
+      - "*.jpg"
+      - "*.jpeg"
+      - "*.webp"
+      - "*.ico"
+      - "robots.txt"
+      - "sitemap.xml"
+      - "tools/sync_wasmer_public.py"
+      - ".github/workflows/sync-wasmer-public.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-wasmer-public
+  cancel-in-progress: false
+
+jobs:
+  sync-static:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Mirror only safe static assets into public/
+        run: python3 tools/sync_wasmer_public.py
+      - name: Commit only changed public files
+        shell: bash
+        run: |
+          git add -- public
+          if git diff --cached --quiet; then
+            echo "No public mirror changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync Wasmer public static files"
+          git push origin HEAD:main
