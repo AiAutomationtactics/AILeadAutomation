@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://masteraffiliate.wasmer.app/sitemap.xml
