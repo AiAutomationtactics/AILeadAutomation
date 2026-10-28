@@ -7,10 +7,11 @@ const SITEMAP=process.env.GSC_SITEMAP||new URL('sitemap.xml',PROPERTY).href;
 const AUTH='https://oauth2.googleapis.com/token';
 const encoded=v=>Buffer.from(v).toString('base64url');
 function credentials(){
-  const secret=process.env.GSC_SERVICE_ACCOUNT_JSON_B64;
-  if(!secret) return null;
+  const raw=process.env.GSC_SERVICE_ACCOUNT_JSON;
+  const encodedSecret=process.env.GSC_SERVICE_ACCOUNT_JSON_B64;
+  if(!raw&&!encodedSecret) return null;
   let c;
-  try{c=JSON.parse(Buffer.from(secret,'base64').toString('utf8'));}
+  try{c=JSON.parse(raw||Buffer.from(encodedSecret,'base64').toString('utf8'));}
   catch{throw Error('The configured service-account secret is invalid JSON.');}
   if(c.type!=='service_account'||!c.client_email||!c.private_key)throw Error('A valid service-account credential is required.');
   if(c.token_uri&&c.token_uri!==AUTH)throw Error('Unexpected token endpoint.');
@@ -43,7 +44,7 @@ async function main(){
   const command=process.argv[2]||'audit';
   if(!['audit','inspect','submit-sitemap'].includes(command))throw Error('Unknown command. Use audit, inspect, or submit-sitemap.');
   const cred=credentials();
-  if(!cred){console.log('SKIPPED: GitHub Actions secret GSC_SERVICE_ACCOUNT_JSON_B64 is not set. No Google connection is active.');return;}
+  if(!cred){console.log('SKIPPED: GitHub Actions secret GSC_SERVICE_ACCOUNT_JSON or GSC_SERVICE_ACCOUNT_JSON_B64 is not set. No Google connection is active.');return;}
   const token=await tokenFor(cred);
   const properties=await request(token,'https://www.googleapis.com/webmasters/v3/sites');
   const permission=(properties.siteEntry||[]).find(x=>x.siteUrl===PROPERTY);
