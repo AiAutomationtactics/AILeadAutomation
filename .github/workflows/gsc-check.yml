@@ -1,0 +1,46 @@
+name: Authorized Search Console audit
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Choose an audit, URL inspection, or deliberate one-time sitemap submission"
+        required: true
+        default: audit
+        type: choice
+        options:
+          - audit
+          - inspect
+          - submit-sitemap
+  schedule:
+    - cron: "14 */3 * * *"
+permissions:
+  contents: read
+concurrency:
+  group: gsc-check
+  cancel-in-progress: false
+jobs:
+  gsc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GSC_SERVICE_ACCOUNT_JSON_B64: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON_B64 }}
+      GSC_PROPERTY: ${{ vars.GSC_PROPERTY }}
+      GSC_SITEMAP: ${{ vars.GSC_SITEMAP }}
+      GSC_INSPECT_URL: ${{ vars.GSC_INSPECT_URL }}
+      ACTION_REQUESTED: ${{ github.event.inputs.action }}
+    steps:
+      - name: Checkout reviewed source
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: "22"
+      - name: Run Search Console action
+        run: |
+          case "$ACTION_REQUESTED" in
+            submit-sitemap) node tools/gsc-connector/index.mjs submit-sitemap ;;
+            inspect) node tools/gsc-connector/index.mjs inspect ;;
+            *) node tools/gsc-connector/index.mjs audit ;;
+          esac
