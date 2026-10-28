@@ -78,6 +78,15 @@ These are GitHub source commits only. Live Wasmer DNS/HTTPS/page access was not 
 - When to share a resource link in a community
 - Moderation and consent rules for small groups
 
+### Oct 28, 2026 — two distinct guides committed; three proposals merged
+- A useful comment versus promotional comment rubric → `useful-comment-rubric.html`, with explicit stop conditions, a seven-criterion scorecard, a fictional worked comparison and a pre-post worksheet.
+- Moderation and consent rules for small groups → `small-group-moderation-consent.html`, with a group charter, proportionate moderation actions, data minimization, separate newsletter consent and a worked resource-link review.
+- Facebook group participation without link dumping → merged into existing `free-traffic-etiquette.html` and `community-answer-protocol.html`; current platform-specific rules should be checked at the point of use, so no duplicative article.
+- How to answer repetitive beginner questions → already addressed as an editorial workflow in `support-questions-to-tutorials.html`; no second near-identical guide.
+- When to share a resource link in a community → covered by `community-answer-protocol.html` and the new comment rubric; no thin stand-alone page.
+
+These are source articles committed to GitHub. Live `masteraffiliate.wasmer.app` DNS/HTTPS checks failed on October 28; public deployment and indexing are unverified. The root-to-`public/` synchronization workflow exists in the repository, but a workflow file is not proof that it ran or that Wasmer deployed the result. New article URLs remain omitted from sitemap.xml pending verification of actual live indexable pages. `resources.html` retains noindex. No affiliate or checkout links, forced opt-in, or cross-property Search Console verification token were added.
+
 ## Oct 29, 2026 — five proposed tasks
 - Organic traffic source comparison worksheet
 - How to test a free traffic source for relevance
