@@ -94,6 +94,14 @@ These are source articles committed to GitHub. Live `masteraffiliate.wasmer.app`
 - Diagnose high visits but low engagement
 - Interpreting direct traffic without overclaiming
 
+### Oct 29, 2026 — three original educational guides committed; two topics merged
+- Organic traffic source comparison → `organic-source-comparison-worksheet.html`: consistent denominators, fictional source data and a decision worksheet.
+- Diagnose high visits but low engagement → `high-visits-low-engagement-diagnostic.html`: seven checks, an illustrative before/after example and a change log.
+- Interpret Direct traffic without overclaiming → `direct-traffic-attribution-audit.html`: GA4 definitions, UTM/redirect audit and an unknown-source ledger.
+- Testing a free source for relevance was merged with the source comparison and existing `thirty-day-experiment.html`.
+- Referring sites and UTM attribution were merged with the Direct audit and existing `utm-link-builder.html`.
+GitHub source publication does not establish Wasmer deployment. The production hostname failed DNS resolution on October 29. No unverified new URLs were added to sitemap.xml. No referral, payment or unrelated verification token was added.
+
 ## Oct 30, 2026 — five proposed tasks
 - Lead magnet format selector for new creators
 - A one-page traffic tracking spreadsheet design
