@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102444">
+<meta name="description" content="Free traffic-to-commission calculator. Explore visitor, opt-in and sales rates, break-even point, and the monthly traffic needed for a hypothetical revenue goal.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Traffic-to-Commission Calculator">
+<meta property="og:description" content="Understand your marketing funnel with a private, transparent, editable scenario calculator.">
+<title>Free Traffic-to-Commission Calculator | Marketing Toolkit</title>
+<style>
+:root{color-scheme:light;--navy:#102444;--blue:#1b5589;--ink:#18263c;--muted:#506077;--line:#d5dfe9;--bg:#f3f7fc}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);font:16px/1.6 system-ui,Arial,sans-serif}
+a{color:var(--blue)}:focus-visible{outline:3px solid #dfa52b;outline-offset:3px}
+.skip{position:absolute;top:-200px;padding:10px;background:#ffe39d}.skip:focus{top:0}
+header{background:var(--navy);color:white;padding:40px 20px}header .inner{max-width:1040px;margin:auto}
+header p{max-width:750px;color:#e0edff}h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.13;margin:12px 0}
+.eyebrow{font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;color:#bfdcfc;font-weight:800}
+main{max-width:1080px;margin:auto;padding:26px 20px 55px}.notice{background:var(--bg);padding:14px 18px;border-left:4px solid var(--blue)}
+.panel{margin:25px 0;border:1px solid var(--line);border-radius:14px;padding:22px}
+.inputs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+label{font-size:.94rem;font-weight:700}label small{display:block;font-weight:400;color:var(--muted)}
+input,select{display:block;width:100%;padding:10px;border:1px solid #7d91aa;border-radius:8px;min-height:45px;font:inherit;margin-top:5px}
+button{background:var(--blue);border:0;border-radius:8px;color:#fff;padding:12px 17px;font:inherit;font-weight:700;cursor:pointer}
+button.alt{background:#e8f0f8;color:#163e67;border:1px solid #bacbdc}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.metric{background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:15px}
+.metric .value{font-size:clamp(1.3rem,3vw,1.7rem);font-weight:800;overflow-wrap:anywhere}
+.metric .key{color:var(--muted);font-size:.87rem}.small{color:var(--muted);font-size:.88rem}
+.scenarios{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.scenario{padding:17px;border:1px solid var(--line);border-radius:10px}.scenario strong{font-size:1.3rem}
+summary{font-weight:700;cursor:pointer}details{padding:13px 0;border-bottom:1px solid var(--line)}
+footer{padding:26px 20px;background:var(--bg);border-top:1px solid var(--line);color:var(--muted)}
+footer>div{max-width:1040px;margin:auto}#error{color:#9e2525;font-weight:700}
+@media(max-width:780px){.inputs{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.scenarios{grid-template-columns:1fr}}
+@media(max-width:520px){.inputs,.metrics{grid-template-columns:1fr}.panel{padding:17px}}
+@media print{header{background:white;color:#111}.actions,footer{display:none}.metric,.scenario{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#planner">Skip to calculator</a>
+<header><div class="inner"><div class="eyebrow">Free educational marketing tool · No registration</div>
+<h1>Traffic-to-Commission Calculator</h1>
+<p>Plan the whole journey from website sessions to voluntary leads, confirmed buyers and eligible commission. See the numbers, test lower and higher conversions, and export your assumptions as CSV.</p>
+<p>This runs entirely in your browser. No email collection, tracking or external libraries. Earnings are never guaranteed.</p></div></header>
+<main>
+<div class="notice"><strong>How to use this:</strong> Enter observed rates if available. Defaults are fictional examples, not typical or promised results. A $50,000 revenue goal is just an adjustable planning target.</div>
+<section class="panel" id="planner"><h2>1. Enter your scenario</h2>
+<form id="calc"><div class="inputs">
+<label for="sessions">Monthly website sessions<small>Visitors to the landing page</small><input id="sessions" type="number" min="0" max="1000000000" step="1" value="1000" required></label>
+<label for="leadRate">Session → lead rate (%)<small>Consent-based opt-ins / sessions</small><input id="leadRate" type="number" min="0" max="100" step="0.01" value="3" required></label>
+<label for="saleRate">Lead → sale rate (%)<small>Eligible buyers / opt-ins</small><input id="saleRate" type="number" min="0" max="100" step="0.01" value="2" required></label>
+<label for="commission">Commission per sale<small>Use the actual eligible payout</small><input id="commission" type="number" min="0" max="10000000" step="0.01" value="20" required></label>
+<label for="cost">Monthly campaign costs<small>Include expenses you want to measure</small><input id="cost" type="number" min="0" max="1000000000" step="0.01" value="0" required></label>
+<label for="currency">Currency label<small>This does not convert currencies</small><select id="currency"><option value="CAD">CAD</option><option value="USD">USD</option></select></label>
+<label for="goal">Hypothetical gross target<small>Not a forecast or guarantee</small><input id="goal" type="number" min="0" max="1000000000" step="0.01" value="50000" required></label>
+<label for="months">Target period (months)<small>Assumes unchanged rates</small><input id="months" type="number" min="1" max="120" step="1" value="12" required></label>
+</div><div class="actions"><button type="submit">Recalculate</button><button type="button" id="export" class="alt">Export worksheet (CSV)</button><button type="button" class="alt" id="print">Print</button></div>
+<p role="alert" id="error" hidden></p>
+</form></section>
+<section class="panel" aria-labelledby="forecast"><h2 id="forecast">2. Illustrative monthly forecast</h2>
+<div class="metrics" aria-live="polite">
+<div class="metric"><div class="key">Expected leads</div><div class="value" id="leads">—</div><div class="small">Not actual subscribers</div></div>
+<div class="metric"><div class="key">Expected sales</div><div class="value" id="sales">—</div><div class="small">Fractional values are statistical</div></div>
+<div class="metric"><div class="key">Gross commissions</div><div class="value" id="gross">—</div><div class="small">Before costs and reversals</div></div>
+<div class="metric"><div class="key">Estimated net</div><div class="value" id="net">—</div><div class="small">Gross minus entered costs</div></div>
+<div class="metric"><div class="key">Break-even sales / month</div><div class="value" id="breakeven">—</div><div class="small">Rounded up to whole sales</div></div>
+<div class="metric"><div class="key">Monthly sessions for goal</div><div class="value" id="required">—</div><div class="small">Mathematical requirement</div></div>
+<div class="metric"><div class="key">Net ROI on costs</div><div class="value" id="roi">—</div><div class="small">Undefined when cost is zero</div></div>
+<div class="metric"><div class="key">Gross per session</div><div class="value" id="perSession">—</div><div class="small">Not a guaranteed EPC</div></div>
+</div><p id="explanation" class="small"></p></section>
+<section class="panel"><h2>3. Sensitivity test</h2><p class="small">Hypothetical scenarios multiply both conversion rates by the indicated factor; neither is a probability prediction.</p><div class="scenarios">
+<div class="scenario"><h3>Lower rates (0.5×)</h3><p><strong id="low">—</strong> gross</p><p id="lowInfo" class="small"></p></div>
+<div class="scenario"><h3>Entered rates (1×)</h3><p><strong id="base">—</strong> gross</p><p id="baseInfo" class="small"></p></div>
+<div class="scenario"><h3>Higher rates (1.5×)</h3><p><strong id="high">—</strong> gross</p><p id="highInfo" class="small"></p></div>
+</div></section>
+<section class="panel"><h2>Methodology and limitations</h2>
+<details open><summary>Exact formulas</summary><p>Leads = sessions × lead rate; sales = leads × sale rate; gross commission = sales × payout; estimated net = gross − campaign costs. Monthly sessions for a target = target ÷ (target months × lead rate × sale rate × payout). Break-even sales = campaign costs ÷ payout, rounded up to a whole sale. Rates are expressed as decimals in the calculations.</p></details>
+<details><summary>Why results might differ</summary><p>Refunds, delayed payouts, commission eligibility, device and channel mix, attribution gaps, low-quality visits, consent rates, and changing offers all affect real results. Fractions of expected sales are averages across hypothetical repeated campaigns, not actual orders.</p></details>
+<details><summary>Does this get backlinks or promise $50,000?</summary><p>No. This page is a free resource that other publishers may choose to cite. It does not automatically create backlinks, clicks, conversions, revenue or search rankings. Verify each claimed backlink on a live independent source page.</p></details>
+<details><summary>How should I monitor a campaign?</summary><p>For each month, record channel, actual website sessions, consented leads, confirmed purchases, reversed commissions, actual costs and net payouts. Keep forecasts separate from actual results.</p></details>
+</section>
+<p class="small">Further reading: <a href="https://masteraffiliate.wasmer.app/" rel="noopener noreferrer">MasterAffiliate's free educational traffic and lead-generation guides</a>. This page has no affiliate checkout links or signup form.</p>
+</main>
+<footer><div>Free educational worksheet · No login or email required · No cookies, third-party scripts, analytics or automatic submissions · Not financial advice or an income guarantee.</div></footer>
+<script>
+(function(){
+"use strict";
+var ids=["sessions","leadRate","saleRate","commission","cost","goal","months","currency"];
+var el=function(x){return document.getElementById(x);}, last=null;
+var fmt=new Intl.NumberFormat("en-CA",{maximumFractionDigits:2}),integer=new Intl.NumberFormat("en-CA",{maximumFractionDigits:0});
+function cash(n,code){return Number.isFinite(n)?new Intl.NumberFormat("en-CA",{style:"currency",currency:code,maximumFractionDigits:2}).format(n):"Not achievable";}
+function display(n){return Number.isFinite(n)?fmt.format(n):"Not achievable";}
+function read(){
+var o={};ids.forEach(function(id){o[id]=id==="currency"?el(id).value:Number(el(id).value);});
+if(ids.some(function(id){return id!=="currency"&&(!el(id).value.trim()||!Number.isFinite(o[id]));}))throw Error("Enter valid numbers in all fields.");
+if(o.sessions<0||o.sessions>1e9||!Number.isInteger(o.sessions)||o.leadRate<0||o.leadRate>100||o.saleRate<0||o.saleRate>100||o.commission<0||o.commission>1e7||o.cost<0||o.cost>1e9||o.goal<0||o.goal>1e9||o.months<1||o.months>120||!Number.isInteger(o.months))throw Error("Check the ranges: conversion rates 0–100%, nonnegative costs and whole-number sessions and months.");
+return o;
+}
+function estimate(o,factor){
+var lr=Math.min(1,o.leadRate/100*factor),sr=Math.min(1,o.saleRate/100*factor);
+var leads=o.sessions*lr,sales=leads*sr,gross=sales*o.commission;
+return {leads:leads,sales:sales,gross:gross,net:gross-o.cost};
+}
+function update(){
+try{
+var o=read(),v=estimate(o,1),perVisitor=o.leadRate/100*o.saleRate/100*o.commission;
+var required=o.goal===0?0:(perVisitor>0?Math.ceil(o.goal/o.months/perVisitor):Infinity);
+var breakeven=o.cost===0?0:(o.commission>0?Math.ceil(o.cost/o.commission):Infinity);
+el("leads").textContent=display(v.leads);el("sales").textContent=display(v.sales);
+el("gross").textContent=cash(v.gross,o.currency);el("net").textContent=cash(v.net,o.currency);
+el("breakeven").textContent=Number.isFinite(breakeven)?integer.format(breakeven):"Not achievable";
+el("required").textContent=Number.isFinite(required)?integer.format(required):"Not achievable";
+el("roi").textContent=o.cost>0?display(v.net/o.cost*100)+"%":"Undefined";
+el("perSession").textContent=cash(o.sessions?v.gross/o.sessions:0,o.currency);
+[["low",0.5],["base",1],["high",1.5]].forEach(function(s){
+var a=estimate(o,s[1]);el(s[0]).textContent=cash(a.gross,o.currency);el(s[0]+"Info").textContent=display(a.leads)+" leads · "+display(a.sales)+" sales";});
+el("explanation").textContent=Number.isFinite(required)?"At these unchanged rates, "+integer.format(required)+" sessions per month over "+o.months+" months would be mathematically needed to reach "+cash(o.goal,o.currency)+" in gross commissions. This is not a realistic forecast unless supported by evidence.":"With zero commission or zero conversion, this target cannot be reached under the entered assumptions.";
+last=Object.assign({},o,v,{requiredMonthlySessions:required,breakEvenSales:breakeven,roiPercent:o.cost>0?v.net/o.cost*100:null});
+el("error").hidden=true;
+}catch(err){last=null;el("error").textContent=err.message;el("error").hidden=false;}
+}
+el("calc").addEventListener("submit",function(e){e.preventDefault();update();});
+ids.forEach(function(id){el(id).addEventListener("change",update);});
+el("export").addEventListener("click",function(){update();if(!last)return;
+var lines=[["metric","value"]].concat(Object.entries(last));
+var csv=lines.map(function(a){return a.map(function(v){return '"'+String(v===null?"undefined":v).replace(/"/g,'""')+'"';}).join(",");}).join("\r\n");
+var u=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"})),a=document.createElement("a");a.href=u;a.download="traffic-to-commission-scenario.csv";document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},1000);});
+el("print").addEventListener("click",function(){update();if(last)window.print();});update();
+})();
+</script>
+</body></html>
