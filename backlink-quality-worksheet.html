@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Free editorial backlink review worksheet. Evaluate link relevance, editorial integrity, risks, and evidence before counting links. Includes a private CSV export.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Editorial Backlink Quality Worksheet — Free SEO Tool">
+<meta property="og:description" content="Review the quality and legitimacy of a potential backlink. No login, tracking, or automated placements.">
+<title>Editorial Backlink Quality Worksheet | Free SEO Education</title>
+<style>
+:root{color-scheme:light;--navy:#102444;--blue:#1c5184;--ink:#1b293d;--sub:#4b6078;--line:#d7e1ed;--pale:#f3f7fc}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,Arial,sans-serif;color:var(--ink)}a{color:#205887;text-underline-offset:3px}
+:focus-visible{outline:3px solid #e6b547;outline-offset:3px}
+.skip{position:absolute;top:-150px;padding:12px;background:#ffe4a6}.skip:focus{top:0}
+header{background:var(--navy);color:#fff;padding:40px 20px}header .wrap{max-width:980px;margin:auto}header a{color:#eaf2ff}
+header h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.12;margin:12px 0}header p{max-width:810px;color:#dcecff}
+.kicker{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#c3dbfa}
+main{max-width:1020px;margin:auto;padding:26px 20px 56px}.callout{padding:17px 20px;background:var(--pale);border-left:5px solid var(--blue);margin-bottom:25px}
+.panel{border:1px solid var(--line);border-radius:14px;padding:24px;margin:24px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}label{font-weight:750;font-size:.96rem;display:block}
+label small{font-weight:400;color:var(--sub);display:block}
+input,textarea,select{font:inherit;color:var(--ink);background:#fff;border:1px solid #768ba2;border-radius:8px;padding:11px;width:100%;margin-top:7px}
+textarea{min-height:95px;resize:vertical}.criteria{list-style:none;margin:12px 0;padding:0}
+.criteria li{display:grid;grid-template-columns:minmax(0,1fr) minmax(175px,225px);gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.criteria h3{margin:0;font-size:1rem}.criteria p{margin:4px 0;color:var(--sub);font-size:.91rem}
+.warn{background:#fff5df;border-left:5px solid #c68a19;padding:12px 16px}
+.score{font-size:2rem;font-weight:800;letter-spacing:-.04em}button{border:0;border-radius:8px;background:var(--blue);color:white;padding:12px 17px;cursor:pointer;font:inherit;font-weight:700}
+button.alt{background:#eaf1f8;color:#18446c;border:1px solid #bdcede}.actions{display:flex;flex-wrap:wrap;gap:10px}
+.result{background:var(--pale);padding:20px;border-radius:12px;margin-top:17px}details{border-bottom:1px solid var(--line);padding:12px 0}summary{font-weight:750;cursor:pointer}
+.small{font-size:.9rem;color:var(--sub)}footer{border-top:1px solid var(--line);background:var(--pale);padding:25px 20px;color:var(--sub)}footer div{max-width:1020px;margin:auto}
+@media(max-width:690px){.grid,.criteria li{grid-template-columns:1fr}.panel{padding:17px}header{padding:30px 20px}}
+@media print{header{background:white;color:#111}header p,header .kicker{color:#111}.actions,footer{display:none}.panel{break-inside:avoid}}
+</style>
+</head>
+<body>
+<a class="skip" href="#review">Skip to worksheet</a>
+<header><div class="wrap">
+<div class="kicker">Original free educational resource · no automated submissions</div>
+<h1>Editorial Backlink Quality Worksheet</h1>
+<p>A link is valuable when it helps readers and is given for a genuine editorial reason. Assess a possible citation, spot risky tactics, and keep an evidence record. This worksheet does not submit links, scan websites or promise rankings.</p>
+<p><a href="index.html">← Free traffic-to-commission calculator</a></p>
+</div></header>
+<main>
+<div class="callout"><strong>Important distinction:</strong> Finding an outreach opportunity is not the same as earning a backlink. Count a verified placement only after you personally inspect a live, independently controlled webpage and confirm its clickable link points to the intended URL.</div>
+<section class="panel">
+<h2>How a legitimate backlink is earned</h2>
+<p>Start with a resource worth citing: a step-by-step tutorial, original comparison method, well-documented worksheet, dataset with a clear methodology, or a tool that genuinely saves time. Then identify publishers whose readers have the same problem. Review their editorial and submission rules before proposing anything. A publisher must be free to decline, edit or remove the reference.</p>
+<p>A credible citation makes sense in the surrounding paragraph. The link should lead to the exact page that supports the claim or provides the tool, not a forced signup or unrelated sales pitch. A single contextually useful mention can be more meaningful than dozens of irrelevant profile or comment links.</p>
+<div class="warn"><strong>Do not automate link placement.</strong> Avoid paid links intended to manipulate rankings, private blog networks, expired-domain networks, bulk directories, auto-generated articles, reciprocal link quotas, and false endorsements. If a link is advertising or sponsored, follow the publisher's disclosure and search-engine link-attribute rules.</div>
+</section>
+<section class="panel" id="review">
+<h2>Review one candidate link</h2>
+<form id="audit">
+<div class="grid">
+<label for="source">Source page URL <small>The page that might link to your resource</small><input type="url" id="source" placeholder="https://publisher.example/relevant-article" autocomplete="off"></label>
+<label for="target">Your target resource URL <small>The exact educational page a reader would find helpful</small><input type="url" id="target" placeholder="https://your-site.example/useful-guide" autocomplete="off"></label>
+<label for="state">Actual status <small>Be conservative: requested links are not earned</small><select id="state"><option value="prospect">Prospect only</option><option value="invited">Publisher invited a contribution</option><option value="submitted">Proposed, awaiting editorial decision</option><option value="published_unverified">Published claim, not personally verified</option><option value="verified">Live clickable link personally verified</option><option value="rejected">Rejected or removed</option></select></label>
+<label for="checked">Date reviewed <small>Record when evidence was checked</small><input type="date" id="checked"></label>
+<label for="rel">Link classification <small>Record only what you personally observed</small><select id="rel"><option value="unknown">Not checked</option><option value="editorial">Ordinary editorial link</option><option value="nofollow">nofollow</option><option value="sponsored">sponsored</option><option value="ugc">ugc</option></select></label>
+<label for="note">Editorial context <small>Why would this publisher's readers benefit?</small><textarea id="note" maxlength="1200" placeholder="Describe the specific reader task and relevance"></textarea></label>
+</div>
+<h3>Six review questions</h3>
+<p class="small">Score each 0 = no or not verified; 1 = some evidence; 2 = clear positive evidence. These are editorial judgment aids, not search-engine ranking scores.</p>
+<ol class="criteria">
+<li><div><h3>Topic and reader fit</h3><p>The source discusses the same subject as the destination; readers would benefit from the link.</p></div><label for="c1">Your assessment<select id="c1" class="criterion"><option value="0">0 — No / unknown</option><option value="1">1 — Somewhat</option><option value="2">2 — Directly relevant</option></select></label></li>
+<li><div><h3>Editorial independence</h3><p>A real editor or publisher decides whether a source deserves a citation.</p></div><label for="c2">Your assessment<select id="c2" class="criterion"><option value="0">0 — No / unknown</option><option value="1">1 — Unclear</option><option value="2">2 — Independent review</option></select></label></li>
+<li><div><h3>Useful destination</h3><p>The destination offers substantial original information or a working tool without misleading gates or claims.</p></div><label for="c3">Your assessment<select id="c3" class="criterion"><option value="0">0 — No / unknown</option><option value="1">1 — Partially</option><option value="2">2 — Clearly useful</option></select></label></li>
+<li><div><h3>Appropriate context</h3><p>The surrounding text naturally explains why the reader should visit that resource.</p></div><label for="c4">Your assessment<select id="c4" class="criterion"><option value="0">0 — No / unknown</option><option value="1">1 — Partial</option><option value="2">2 — Specific context</option></select></label></li>
+<li><div><h3>Transparent practices</h3><p>No deceptive endorsement, fake reviews, concealed compensation, or coerced reciprocal linking.</p></div><label for="c5">Your assessment<select id="c5" class="criterion"><option value="0">0 — No / unknown</option><option value="1">1 — Incomplete</option><option value="2">2 — Clearly compliant</option></select></label></li>
+<li><div><h3>Evidence available</h3><p>You can point to the actual source, check the target, and document what was observed.</p></div><label for="c6">Your assessment<select id="c6" class="criterion"><option value="0">0 — No / unknown</option><option value="1">1 — Partial evidence</option><option value="2">2 — Independently verifiable</option></select></label></li>
+</ol>
+<div class="actions"><button type="submit">Review assessment</button><button type="button" class="alt" id="csv">Export record (CSV)</button><button type="button" class="alt" id="print">Print worksheet</button></div>
+<div id="result" class="result" role="status" aria-live="polite"><div class="score" id="score">0 / 12</div><p id="guidance">Enter what you have independently checked. Zero means insufficient evidence, not a definitive judgment on the publisher.</p><p class="small" id="count">Verified backlinks counted by this worksheet: 0 (until evidence is checked).</p></div>
+</form>
+</section>
+<section class="panel">
+<h2>A practical checklist for outreach, not spam</h2>
+<details open><summary>1. Build a cite-worthy resource</summary><p>Publish an original explanation or useful tool; give it a descriptive title, date or version when meaningful, accessible mobile formatting, transparent methodology and a stable URL. Test that links and instructions work. A link should help a reader complete a specific task.</p></details>
+<details><summary>2. Find a real editorial fit</summary><p>Look for resource pages, topic-specific tutorials, association knowledge bases, expert interview formats, or publications that welcome contributions. Read the audience and current content. Avoid long lists of sites chosen only because they accept submissions.</p></details>
+<details><summary>3. Respect contact and platform rules</summary><p>Only use published submission channels that genuinely welcome the kind of proposal you have. Follow the site's policy and applicable messaging laws, including Canadian anti-spam requirements where applicable. Do not automate unsolicited pitches or scrape private addresses.</p></details>
+<details><summary>4. Offer a specific contribution</summary><p>Explain the missing reader question, what your resource adds, and why you think it improves the existing page. Avoid promises of ranking, commissions, or traffic. Accept rejection or no reply; do not repeatedly follow up without permission.</p></details>
+<details><summary>5. Verify and maintain</summary><p>If a publisher chooses to link, inspect the live source page and click the link to check the destination. Record date, source, target and link type. Review it occasionally because links can move, break or disappear. A removed placement should no longer be counted as live.</p></details>
+</section>
+<p class="small">This worksheet is deliberately independent of outreach platforms, paid services and affiliate programs. It does not validate external URLs or send submitted text anywhere. Any score you assign is your own assessment.</p>
+</main>
+<footer><div>Free educational template · No cookies or server uploads · No link generation · No ranking or earnings guarantee · <a href="index.html">Calculator home</a></div></footer>
+<script>
+(function(){
+"use strict";
+const ids=["source","target","state","checked","rel","note","c1","c2","c3","c4","c5","c6"];
+const el=id=>document.getElementById(id);
+function values(){const out={};ids.forEach(id=>out[id]=el(id).value);return out;}
+function review(){
+let total=0;for(let i=1;i<=6;i++)total+=Number(el("c"+i).value);
+let v=values();const isVerified=v.state==="verified"&&v.source.trim().length>0&&v.target.trim().length>0&&v.checked!=="";
+el("score").textContent=total+" / 12";
+let comment=total>=10?"Strong self-reported fit; still independently verify every factual claim.":total>=6?"Some relevant signals; investigate unanswered questions before relying on this prospect.":"Insufficient positive evidence; research further rather than counting or placing a link.";
+if(!v.note.trim())comment+=" Add a specific explanation of how readers benefit.";
+el("guidance").textContent=comment;
+el("count").textContent="Self-reported verified placements in this record: "+(isVerified?1:0)+". This worksheet cannot inspect live links and does not certify verification.";
+return Object.assign({quality_assessment:total,reported_verified:isVerified?"yes, self-reported":"no"},v);
+}
+el("audit").addEventListener("submit",e=>{e.preventDefault();review();});
+ids.forEach(id=>el(id).addEventListener("change",review));
+el("csv").addEventListener("click",()=>{const data=review();const lines=[["field","value"],...Object.entries(data)];
+const csv=lines.map(row=>row.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(",")).join("\r\n");
+const blob=new Blob([csv],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");
+a.href=url;a.download="editorial-backlink-review.csv";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+el("print").addEventListener("click",()=>{review();window.print();});
+review();
+})();
+</script>
+</body>
+</html>
