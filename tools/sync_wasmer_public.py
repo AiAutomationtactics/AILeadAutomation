@@ -13,10 +13,12 @@ DEST = ROOT / "public"
 EXTENSIONS = {".html", ".htm", ".css", ".js", ".mjs", ".svg", ".png",
               ".jpg", ".jpeg", ".webp", ".ico", ".webmanifest"}
 SPECIAL = {"robots.txt", "sitemap.xml", "favicon.ico", "site.webmanifest"}
+# Never mirror the GitHub Pages-only learning tools to the Wasmer web root.
+GITHUB_PAGES_ONLY = {"traffic-roi-calculator.html", "backlink-quality-worksheet.html"}
 
 def source_files():
     for path in sorted(ROOT.iterdir()):
-        if path.is_file() and (path.suffix.lower() in EXTENSIONS or path.name in SPECIAL):
+        if path.is_file() and path.name not in GITHUB_PAGES_ONLY and (path.suffix.lower() in EXTENSIONS or path.name in SPECIAL):
             yield path
 
 def main():

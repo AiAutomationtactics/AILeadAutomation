@@ -13,6 +13,8 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 ORIGIN = "https://masteraffiliate.wasmer.app"
+# These two free learning tools deploy exclusively through the GitHub Pages allowlist.
+GITHUB_PAGES_ONLY = {"traffic-roi-calculator.html", "backlink-quality-worksheet.html"}
 ROBOTS_META = re.compile(r'<meta\b[^>]*name=["\']robots["\'][^>]*>', re.I)
 CONTENT = re.compile(r'content=["\']([^"\']+)["\']', re.I)
 
@@ -29,7 +31,7 @@ def is_indexable(html: Path) -> bool:
 def main() -> int:
     eligible = {
         ORIGIN + ("/" if p.name == "index.html" else "/" + p.name)
-        for p in ROOT.glob("*.html") if is_indexable(p)
+        for p in ROOT.glob("*.html") if p.name not in GITHUB_PAGES_ONLY and is_indexable(p)
     }
     try:
         xml = ET.parse(ROOT / "sitemap.xml")
