@@ -18,6 +18,7 @@ on:
       - "robots.txt"
       - "sitemap.xml"
       - "tools/sync_wasmer_public.py"
+      - "tools/check_search_indexing.py"
       - ".github/workflows/sync-wasmer-public.yml"
   workflow_dispatch:
 
@@ -37,6 +38,8 @@ jobs:
         with:
           ref: main
           persist-credentials: true
+      - name: Fail on sitemap or indexability drift
+        run: python3 tools/check_search_indexing.py
       - name: Mirror only safe static assets into public/
         run: python3 tools/sync_wasmer_public.py
       - name: Commit only changed public files
