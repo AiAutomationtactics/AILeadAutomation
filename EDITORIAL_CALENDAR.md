@@ -109,6 +109,15 @@ GitHub source publication does not establish Wasmer deployment. The production h
 - Offer a printable checklist without gating it
 - Delivering a promised download reliably
 
+### Oct 30, 2026 — three substantive guides committed; two overlapping proposals merged
+- Lead magnet format selector → `lead-magnet-format-decision.html`, a task-first format matrix, hypothetical example, accessibility/maintenance decision and copyable worksheet.
+- One-page traffic tracking spreadsheet design → `traffic-tracking-sheet-schema.html`, with defined reporting grain, schema, worked numbers, attribution limitations and data-minimization checks.
+- Delivering a promised download reliably → `reliable-free-download-delivery.html`, with direct/email/fallback comparison, five-scenario release test and failure recovery worksheet.
+- Mini email course planning → merged with existing `email-opt-in-sequence.html`; no near-duplicate guide.
+- Printable checklist without gating → addressed in existing `traffic-to-leads-checklist.html` and the new delivery/format guidance; no thin duplicate.
+
+**Production verification gate:** These three new GitHub source articles intentionally have `noindex,follow` until the designated Wasmer hostname resolves and the pages can be checked live. Their canonical and og:url are correct absolute intended URLs, but GitHub source presence is not proof of public deployment. They are not added to sitemap.xml while unverified; the existing sitemap's entries are themselves not confirmed live. Remove noindex and reconcile sitemap only after successful production verification. No referral links, Stripe payments, Search Console cross-property tags, or mandatory opt-in were added. The existing `resources.html` noindex remains unchanged.
+
 ## Oct 31, 2026 — five proposed tasks
 - Writing a landing page headline for search intent
 - Short consent-friendly signup copy examples
