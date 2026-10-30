@@ -1,10 +1,11 @@
-name: Deploy free ROI calculator
+name: Deploy free educational tools
 
 on:
   push:
     branches: [main]
     paths:
       - 'traffic-roi-calculator.html'
+      - 'backlink-quality-worksheet.html'
       - '.github/workflows/deploy-roi-calculator.yml'
   workflow_dispatch:
 
@@ -28,11 +29,14 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Prepare only the public educational calculator
+      - name: Stage only two whitelisted educational pages
         shell: bash
         run: |
           mkdir -p _site
+          test -s traffic-roi-calculator.html
+          test -s backlink-quality-worksheet.html
           cp traffic-roi-calculator.html _site/index.html
+          cp backlink-quality-worksheet.html _site/backlink-quality-worksheet.html
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
