@@ -125,6 +125,13 @@ GitHub source publication does not establish Wasmer deployment. The production h
 - Five signals your landing page does not match an ad
 - How to make an effective first-screen explanation
 
+### Oct 31, 2026 — three substantive guides committed; two proposals merged
+- Headline search-intent and first-screen explanation → `search-intent-first-screen-headline.html`, a task-first headline audit, before/after comparison, mobile checks and comprehension worksheet. Combined the overlapping first-screen proposal into this guide.
+- Consent-friendly signup copy → `consent-friendly-newsletter-signup-copy.html`, distinct resource/newsletter promises, illustrative copy patterns, CASL and W3C primary sources, and consent-testing worksheet.
+- Ad-to-page mismatch signals → `ad-to-landing-page-message-match-audit.html`, five distinct failure signals, fictional example, audit table and measurement cautions.
+- The general capture-page accessibility checklist is already addressed by `accessible-affiliate-page-audit.html` and `email-optin-quality-check.html`; no redundant page.
+- These are GitHub source guides only, staged with `noindex,follow` and intentionally absent from `sitemap.xml` pending verification of actual deployment. The production hostname previously served a different MasterAffiliate site with /guides/ URLs and 404s for these repository's root-level articles. No confirmed live deployment or Search Console submission; no commercial links or costs.
+
 ## Nov 1, 2026 — five proposed tasks
 - Three-message educational welcome email sequence
 - A subscriber expectations checklist
