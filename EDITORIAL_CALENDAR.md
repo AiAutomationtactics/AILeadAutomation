@@ -139,6 +139,14 @@ GitHub source publication does not establish Wasmer deployment. The production h
 - A simple unsubscribe testing protocol
 - Measure useful replies rather than email opens alone
 
+### Nov 1, 2026 — three distinct guides committed; two proposals merged
+- Sponsorship in email newsletters → `newsletter-sponsorship-disclosure-checklist.html`: material connections, point-of-recommendation disclosures, fictional worked example and evidence worksheet.
+- Unsubscribe testing → `unsubscribe-workflow-test-protocol.html`: seven scenarios, suppression and queued-message verification, CASL official sources and a QA log.
+- Useful replies versus opens → `newsletter-replies-vs-opens-worksheet.html`: Apple Mail Privacy Protection limitations, consistent denominators, fictional calculations and a privacy-first feedback worksheet.
+- Three-message welcome sequence → already covered by `email-opt-in-sequence.html`; no duplicate article.
+- Subscriber expectations checklist → already substantially covered by `consent-friendly-newsletter-signup-copy.html` and `email-optin-quality-check.html`; no thin duplicate.
+- Live November 1 verification: `https://masteraffiliate.wasmer.app/` serves a different 100-guide MasterAffiliate site, with 105 live sitemap URLs primarily under `/guides/`. The AI Lead Automation source path `/consent-friendly-newsletter-signup-copy.html` returned HTTP 404. New source guides remain `noindex,follow` and excluded from the source sitemap; no deployment replacement, production sitemap change, Search Console submission or affiliate/payment CTA was made. Preserve `resources.html` noindex.
+
 ## Nov 2, 2026 — five proposed tasks
 - UTM naming system for several traffic channels
 - How to create a consistent campaign log
