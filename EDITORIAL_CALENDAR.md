@@ -154,6 +154,15 @@ GitHub source publication does not establish Wasmer deployment. The production h
 - A simple lead conversion calculator explained
 - What you can learn from a small traffic sample
 
+### Nov 2, 2026 — two substantive guides committed; three proposals merged
+- Debugging duplicate signup events → `duplicate-signup-event-debugging.html`: a 1,300-word instructional GA4 and email-provider QA protocol, event/accepted/confirmed distinctions, duplicate-source diagnosis, fictional calculations and a copyable test log.
+- What you can learn from a small traffic sample → `small-traffic-sample-interpretation.html`: a 1,190-word guide with fictional comparison, denominator definitions, sampling limitations, decision rules and a small-sample review worksheet.
+- UTM naming across channels → already substantially covered by `utm-link-builder.html`, `direct-traffic-attribution-audit.html` and `campaign-metrics-dictionary.html`; no near-duplicate guide.
+- Consistent campaign log → already covered by `traffic-tracking-sheet-schema.html` and `thirty-day-experiment.html`; no near-duplicate.
+- Lead conversion calculator → existing `traffic-roi-calculator.html` and `organic-source-comparison-worksheet.html` provide the relevant arithmetic and limitations; no thin calculator page.
+
+Both new guides are educational GitHub source files with descriptive metadata, semantic headings, responsive existing CSS, matching intended HTTPS canonical/og:url, official Google Analytics references and `noindex,follow` while undeployed. They are deliberately excluded from the source sitemap. On Nov 2 the web checker could not access the production homepage or sitemap, and an independent container HTTPS request failed DNS resolution; this does not invalidate the Nov 1 confirmed observation that the hostname serves a different MasterAffiliate 100-guide site and returns 404 for AI Lead Automation root-level paths. Do not replace that production site or submit this repository's sitemap without verified mapping. No affiliate referrals, Stripe checkout links, forced opt-in, cross-property verification token or expenses were added. `resources.html` remains `noindex,nofollow`. Search Console ownership, submission and indexing remain unverified.
+
 ## Nov 3, 2026 — five proposed tasks
 - Set a maximum affordable advertising test
 - Questions to ask before purchasing visitor clicks
