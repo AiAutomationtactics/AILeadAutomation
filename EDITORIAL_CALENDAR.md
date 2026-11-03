@@ -170,6 +170,12 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Calculate break-even commission assumptions
 - Stop rules for weak affiliate campaigns
 
+### Nov 3, 2026 — two distinct educational guides committed; three proposals merged
+- Paid-click vendor due diligence → `paid-click-vendor-due-diligence.html`: vendor source questions, reporting definitions, billing/renewal review, fictional cost comparison and decision worksheet.
+- Campaign stop rules → `affiliate-campaign-stop-rules.html`: immediate stops versus review triggers, affordability cap, tracking health checks, fictional decision timeline and restart protocol.
+- Maximum affordable test, break-even assumptions and clicks-versus-leads definitions were already covered by `paid-traffic-safeguards.html`, `organic-source-comparison-worksheet.html` and `small-traffic-sample-interpretation.html`; no redundant pages created.
+- These are GitHub source guides, staged `noindex,follow` pending verification of deployment to the intended domain. They are not added to the sitemap. Existing production site has previously served a different 100-guide site; no Wasmer deployment or Search Console submission is claimed. No affiliate or checkout links, mandatory opt-in, unrelated verification tag or expenses added.
+
 ## Nov 4, 2026 — five proposed tasks
 - Choosing affiliate offers by audience fit
 - A no-hype way to discuss commissions
