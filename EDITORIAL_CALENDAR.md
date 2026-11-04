@@ -183,6 +183,13 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Price and refund claims: what to confirm
 - How to compare offers without testing them
 
+
+### Nov 4, 2026 — two substantive guides committed; three proposals consolidated
+- Audience-fit offer selection → `affiliate-offer-audience-fit-worksheet.html`: a task-fit rubric, fictional comparison, claim ledger, referral validation and copyable worksheet.
+- Sales-page claim verification → `affiliate-sales-claim-evidence-audit.html`: feature, price, billing, refund, testimonial and earnings-claim verification with a fictional audit and evidence table.
+- No-hype commission discussion, price/refund verification and untested-offer comparison were integrated into the two guides rather than published as thin duplicates.
+- Both are GitHub source-only `noindex,follow` pages with intended canonical URLs; they remain excluded from sitemap.xml pending verified Wasmer deployment. The designated hostname previously served a different 100-guide site, and the live sitemap could not be fetched during this run. No promotional links, checkout buttons, forced opt-ins, cross-property verification tags or expenses were added. Search Console submission and Google indexing are unverified.
+
 ## Nov 5, 2026 — five proposed tasks
 - SEO internal links that aid navigation
 - Write descriptive meta titles without keyword stuffing
