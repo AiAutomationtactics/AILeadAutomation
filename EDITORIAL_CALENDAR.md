@@ -197,6 +197,13 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Image alternatives for visual marketing lessons
 - How to audit broken outgoing links
 
+
+### Nov 5, 2026 — two distinct source guides committed
+- Internal-link navigation audit → `internal-link-navigation-audit.html`: reader-task mapping, accessible anchor text, orphan-page review, deployment verification and a practical audit worksheet.
+- Outbound-link maintenance protocol → `outbound-link-maintenance-protocol.html`: link category inventory, redirect testing, merchant claim verification, nearby affiliate disclosure and a maintenance log.
+- Descriptive titles, breadcrumbs and image alternatives remain editorial candidates; do not publish thin duplicates without further comparison to existing accessibility and SEO coverage.
+- Both new pages are GitHub source-only and deliberately `noindex,follow` until a verified matching Wasmer deployment exists. Neither is added to sitemap.xml. The live domain has previously served a different MasterAffiliate website. No commercial referrals, Stripe checkouts, mandatory opt-in, Search Console tokens or expenses were added.
+
 ## Nov 6, 2026 — five proposed tasks
 - Understanding XML sitemap coverage
 - Robots.txt and noindex: when to use each
