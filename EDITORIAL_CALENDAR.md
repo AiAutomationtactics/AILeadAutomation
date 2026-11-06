@@ -211,6 +211,12 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Diagnose a page missing from Search Console
 - Avoid duplicate content across multiple domains
 
+
+### Nov 6, 2026 — one integrated diagnostic guide committed
+- Static-page indexability decision tree → `static-page-indexability-decision-tree.html`: a substantive deployment-first diagnostic covering exact HTTP responses, robots.txt versus noindex, canonical consistency, live sitemap eligibility, Search Console evidence, a hypothetical 404 case and a reusable investigation log.
+- The five proposed indexing topics were combined into one coherent troubleshooting workflow rather than fragmented into near-duplicate pages. Existing `wasmer-seo-launch.html` and `technical-seo-checklist.html` already cover general launch requirements.
+- Source guide is staged with `noindex,follow` and intentionally omitted from the sitemap pending proof of a matching production deployment. November 6 HTTPS checks from this execution environment failed DNS resolution for the production homepage, sitemap, robots.txt and a prior guide. The earlier observed site mismatch remains unresolved. No Wasmer deployment or Search Console submission is claimed. No commercial referrals, checkout links, forced email opt-in, unrelated verification tokens or expenses added. `resources.html` noindex remains unchanged.
+
 ## Nov 7, 2026 — five proposed tasks
 - What AI-assisted search can and cannot promise
 - An original examples worksheet for AI content
