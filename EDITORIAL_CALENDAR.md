@@ -224,6 +224,12 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - When to update an older SEO tutorial
 - What an AI search visibility report can tell you
 
+### Nov 7, 2026 — two distinct educational guides committed
+- AI-assisted claim verification → `ai-writing-claim-verification-workflow.html`: claim classification, source-and-scope ledger, fictional correction example, merchant-link safeguards and a publication worksheet.
+- Update versus republish decision → `seo-guide-update-versus-republish.html`: keep/update/consolidate/new framework, fictional overlap analysis, change-log procedure and maintenance worksheet.
+- General AI search promises and visibility reports overlap the existing AI search SEO and measurement guides; no new claims of AI citations or guaranteed discovery were made. The original-examples worksheet was incorporated into the claim-verification guide.
+- Both are GitHub source-only, `noindex,follow` until a matching Wasmer production deployment is verified, and intentionally absent from the sitemap. November 7 public URL checks did not establish access to the intended article or robots.txt. No commercial links, checkout CTAs, forced opt-ins, cross-property verification tokens or expenses were added. Search Console submission and indexing remain unverified.
+
 ## Nov 8, 2026 — five proposed tasks
 - Privacy-first lead collection for beginners
 - How to explain data use beside a signup form
