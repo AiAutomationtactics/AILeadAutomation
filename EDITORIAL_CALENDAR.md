@@ -237,6 +237,11 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Tracking tags and visitor trust tradeoffs
 - A vendor privacy question checklist
 
+### Nov 8, 2026 — one distinct educational guide committed
+- Signup data-flow and vendor review → `signup-data-flow-and-vendor-review.html`: practical data-flow map, subscriber expectations, consent and unsubscribe checks, analytics identifier safeguards, vendor due-diligence questions, fictional worked example and copyable worksheet.
+- Consent wording and email signup quality already have dedicated coverage in `consent-friendly-newsletter-signup-copy.html` and `unsubscribe-workflow-test-protocol.html`; tracking measurement overlaps existing GA4 diagnostics. These were consolidated into one privacy-first workflow instead of separate repetitive pages.
+- Source is staged `noindex,follow` and excluded from the sitemap pending verified matching Wasmer deployment. November 8 web requests could not access the designated production sitemap or proposed guide URL. No production deployment, Search Console submission, affiliate/payment CTA, cross-property verification token or expense is claimed. `resources.html` noindex remains unchanged.
+
 ## Nov 9, 2026 — five proposed tasks
 - Herculist audience-fit worksheet without hype
 - LeadsLeap landing page decision criteria
