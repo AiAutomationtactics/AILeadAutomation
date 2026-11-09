@@ -249,6 +249,12 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - How to assess an affiliate community offer
 - Referral-link validation checklist
 
+### Nov 9, 2026 — one substantive guide committed; four candidates consolidated or deferred
+- Email safelist traffic evaluation → `email-safelist-traffic-evaluation.html`: explains provider clicks versus observed sessions versus confirmed leads, fictional arithmetic, CASL/consent considerations, source due diligence, stop conditions and a copyable evaluation worksheet.
+- Herculist audience-fit and LeadsLeap landing-page criteria were integrated as neutral evaluation questions rather than unsupported named-product claims. Current merchant terms and referral destinations were not verified, so no affiliate links were added.
+- Affiliate community offer review and referral-link validation substantially overlap `affiliate-offer-audience-fit-worksheet.html`, `affiliate-sales-claim-evidence-audit.html` and `outbound-link-maintenance-protocol.html`; no thin duplicate guides.
+- The new page is GitHub source-only, staged `noindex,follow` and excluded from sitemap.xml. November 9 web requests could not access the owner-designated Wasmer sitemap or November 8 guide. Production mapping and Search Console ownership remain unverified. No live deployment, sitemap submission, affiliate checkout, cross-property verification tag or expense is claimed. `resources.html` remains unchanged.
+
 ## Nov 10, 2026 — five proposed tasks
 - A weekly marketing experiment review worksheet
 - Classify traffic experiments by evidence strength
