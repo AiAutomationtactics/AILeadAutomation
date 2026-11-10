@@ -262,6 +262,11 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Deciding when to improve instead of republish
 - A reader feedback loop for marketing tutorials
 
+### Nov 10, 2026 — one integrated original guide committed
+- Weekly marketing experiment evidence review → `weekly-marketing-experiment-evidence-review.html`: observed-versus-inferred results, a fictional small-sample calculation, evidence-strength ladder, change ledger, voluntary reader feedback and a copyable decision worksheet.
+- Evidence classification, change documentation and reader feedback were integrated into one coherent weekly review workflow rather than creating thin near-duplicates. The improve-versus-republish question is already covered by `seo-guide-update-versus-republish.html`.
+- GitHub source only, staged `noindex,follow` and excluded from sitemap pending verified matching Wasmer deployment. No commercial referrals, Stripe checkout links, forced opt-in, Search Console token or expenses were added. Production deployment and indexing remain unverified.
+
 ## Nov 11, 2026 — five proposed tasks
 - Make a 90-day content maintenance plan
 - How to prune outdated site pages responsibly
