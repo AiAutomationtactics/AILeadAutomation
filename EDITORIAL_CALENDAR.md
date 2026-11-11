@@ -274,5 +274,10 @@ Both new guides are educational GitHub source files with descriptive metadata, s
 - Build a topic cluster from genuinely distinct tasks
 - A realistic 30-minute SEO review routine
 
+### Nov 11, 2026 — one integrated maintenance guide committed; four proposals consolidated
+- 90-day SEO maintenance plan → `ninety-day-seo-maintenance-plan.html`: a phased audit and repair workflow, keep/improve/consolidate/retire decisions, a 30-minute weekly review, a fictional overlap example, maintenance register and explicit deployment stop conditions.
+- Pruning, corrections, genuinely distinct topic clusters and the short review routine were integrated into the maintenance workflow instead of being published as near-duplicate standalone pages. Existing `seo-guide-update-versus-republish.html`, `internal-link-navigation-audit.html` and `static-page-indexability-decision-tree.html` already cover related implementation details.
+- Source-only GitHub commit `ae0aec1c814d078004a3a99aefd369a55be09d2d`. New article remains `noindex,follow` and excluded from sitemap pending verified matching production deployment. November 11 direct HTTPS requests to the owner-designated homepage, sitemap, robots.txt and a prior guide failed connection/DNS. No Wasmer deployment, Search Console submission, indexing, affiliate referral, Stripe checkout, mandatory opt-in, cross-property verification token or expense is claimed. `resources.html` remains noindex.
+
 ## Non-negotiable editorial requirements
 Each article needs a distinct search intent, a direct answer, meaningful original task/example, limitations, factual review, internal navigation, and plainly labeled affiliate promotion if present. No mass link insertion, fictitious claims or thin rewrites. This calendar requires new, reviewed writing; it does not automatically generate 95 pages.
